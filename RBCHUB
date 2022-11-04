@@ -1,0 +1,76 @@
+local DiscordLib = loadstring(game:HttpGet"https://raw.githubusercontent.com/dawid-scripts/UI-Libs/main/discord%20lib.txt")()
+
+local win = DiscordLib:Window("RBC > Community")
+
+local serv = win:Server("RBC HUB", "")
+
+--Home
+local lbls = serv:Channel("Home/Info")
+
+lbls:Label("< Hello! Welcome to RBC Hub >")
+lbls:Label("● In our discord server you can find:")
+lbls:Label("● 1 ● Economy [Work, Rob, Buy]")
+lbls:Label("● 2 ● Friendly Chat [Speak in chat to get giveaway role]")
+lbls:Label("● 3 ● Giveaways [Cookies, Robux, Accounts and other]")
+lbls:Label("● 4 ● Usefull Information")
+lbls:Label("< How to get giveaway role? >")
+lbls:Label("To get role you need to get 5 level, or invite 5 people")
+lbls:Label("in our server. To get 5 lvl you need talk in chat(it take 30m)")
+lbls:Label("< Good luck ! >")
+
+--BF
+local lbls = serv:Channel("↓ Games ↓")
+
+lbls:Label("* Nothing *")
+
+local sldrs = serv:Channel("Sliders")
+
+local sldr = sldrs:Slider("Slide me!", 0, 1000, 400, function(t)
+print(t)
+end)
+
+local btns = serv:Channel("Pet Simulator X")
+
+btns:Button("", function()
+end)
+
+
+local btns = serv:Channel("YBA")
+
+btns:Button("", function()
+end)
+
+
+local btns = serv:Channel("Cart ride around nothing")
+
+btns:Button("", function()
+end)
+
+
+local btns = serv:Channel("Blox Fruits")
+
+btns:Button("", function()
+end)
+
+
+local btns = serv:Channel("Halloween")
+
+btns:Button("", function()
+end)
+
+
+local sldrs = serv:Channel("Other")
+
+local sldr = sldrs:Slider("WalkSpeed", 0, 200, 0, function(t)
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = t
+end)
+local sldr = sldrs:Slider("JumpPower", 0, 200, 0, function(t)
+game.Players.LocalPlayer.Character.Humanoid.JumpPower = t
+end)
+
+
+local lbls = serv:Channel("Credits")
+     lbls:Label("♦ Owner: ♦                             ♢ Gui: ♢")
+     lbls:Label("       ↓                                           ↓   ")
+	  lbls:Label(">Sanya Otrabov                        Vo1d ")
+	  lbls:Label("< discord.gg/rbc >")
