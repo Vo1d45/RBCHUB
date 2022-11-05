@@ -19,7 +19,7 @@ lbls:Label("in our server. To get 5 lvl you need talk in chat(it take 30m)")
 lbls:Label("< discord.gg/rbc >")
 lbls:Label("< Good luck ! >")
 
---BF
+--Games
 local lbls = serv:Channel("↓ Games ↓")
 
 lbls:Label("* More games coming soon *")
@@ -95,6 +95,7 @@ btns:Button("Lucky Blocks Script", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/9ur98wh8fjkerbngo12ikontgg/fortnite/main/locky%20blocks12nyhubf87yh189j98ihuygrweyugf12ou8r", true))()
 end)
 
+--Other
 
 local sldrs = serv:Channel("Other")
 
