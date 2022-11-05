@@ -16,55 +16,92 @@ lbls:Label("● 4 ● Usefull Information")
 lbls:Label("< How to get giveaway role? >")
 lbls:Label("To get role you need to get 5 level, or invite 5 people")
 lbls:Label("in our server. To get 5 lvl you need talk in chat(it take 30m)")
+lbls:Label("< discord.gg/rbc >")
 lbls:Label("< Good luck ! >")
 
 --BF
 local lbls = serv:Channel("↓ Games ↓")
 
-lbls:Label("* Nothing *")
-
-local sldrs = serv:Channel("Sliders")
-
-local sldr = sldrs:Slider("Slide me!", 0, 1000, 400, function(t)
-print(t)
-end)
-
-local btns = serv:Channel("Pet Simulator X")
-
-btns:Button("", function()
-end)
-
-
-local btns = serv:Channel("YBA")
-
-btns:Button("", function()
-end)
-
-
-local btns = serv:Channel("Cart ride around nothing")
-
-btns:Button("", function()
-end)
-
+lbls:Label("* More games coming soon *")
 
 local btns = serv:Channel("Blox Fruits")
-
-btns:Button("", function()
+btns:Button("Mukuro Hub", function()
+loadstring(game:HttpGet"https://raw.githubusercontent.com/xQuartyx/DonateMe/main/ScriptLoader")()
 end)
 
 
-local btns = serv:Channel("Halloween")
+local btns = serv:Channel("King Legacy")
+btns:Button("King Legacy Script", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/sannin9000/scripts/main/kinglegacy.lua"))()
+end)
 
-btns:Button("", function()
+local btns = serv:Channel("Evade")
+btns:Button("Evade Script", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CopyReal/NexHub/main/NexHubLoader"))()
+end)
+
+local btns = serv:Channel("Doors")
+btns:Button("Vynixius Hub", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Vynixius/main/Doors/Script.lua"))()
+end)
+
+local btns = serv:Channel("Murder Mystery 2")
+btns:Button("Ski Hub", function()
+loadstring(game:HttpGet(("https://pastebin.com/raw/mT10xnt7"), true))()
+end)
+
+local btns = serv:Channel("Rainbow Friends")
+btns:Button("Rainbow Friends Script", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/JNHHGaming/Rainbow-Friends/main/Rainbow%20Friends"))()
+end)
+
+local btns = serv:Channel("Build A Boat For Treasure")
+btns:Button("Ace Hub", function()
+loadstring(game:HttpGet('http://acehub.pro/api/whitelist'))()
+end)
+
+local btns = serv:Channel("Tower Of Hell")
+btns:Button("Ace Hub", function()
+loadstring(game:HttpGet('http://acehub.pro/api/whitelist'))()
+end)
+
+local btns = serv:Channel("MeepCity")
+btns:Button("MeepCity Script", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/synolope/mpcity/main/loader.lua",true))()
+end)
+
+local btns = serv:Channel("Combat Warriors")
+btns:Button("Combat Warriors Gui", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CheeseOnGithub/cheese-hook/main/main%20hydra%20ui.lua",true))()
+end)
+
+local btns = serv:Channel("Arsenal")
+btns:Button("Ace Hub", function()
+loadstring(game:HttpGet('http://acehub.pro/api/whitelist'))()
+end)
+
+local btns = serv:Channel("Work At Pizza Place")
+btns:Button("Coconut Hub", function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/NGHDDDX/ScriptHubScripts/master/CocoHub.txt'),true))()
+end)
+
+local btns = serv:Channel("KAT")
+btns:Button("Owl Hub", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ZinityDrops/OwlHubLink/master/OwlHubBack.lua"))();
+end)
+
+local btns = serv:Channel("Lucky Blocks")
+btns:Button("Lucky Blocks Script", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/9ur98wh8fjkerbngo12ikontgg/fortnite/main/locky%20blocks12nyhubf87yh189j98ihuygrweyugf12ou8r", true))()
 end)
 
 
 local sldrs = serv:Channel("Other")
 
-local sldr = sldrs:Slider("WalkSpeed", 0, 200, 0, function(t)
+local sldr = sldrs:Slider("WalkSpeed", 0, 200, 16, function(t)
 game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = t
 end)
-local sldr = sldrs:Slider("JumpPower", 0, 200, 0, function(t)
+local sldr = sldrs:Slider("JumpPower", 0, 200, 1, function(t)
 game.Players.LocalPlayer.Character.Humanoid.JumpPower = t
 end)
 
